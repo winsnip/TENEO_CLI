@@ -30,7 +30,7 @@ git clone https://github.com/winsnip/TENEO_CLI.git
 ```
 cd TENEO_CLI
 ```
-## 4. Craate .env
+## 4. Create .env
 Before running, make sure you have installed nodejs adn dotenv
 ```
 sudo apt update && sudo apt upgrade -y
