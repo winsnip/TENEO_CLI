@@ -18,18 +18,17 @@ Before running the extension, make sure you register first if you haven't regist
 4. open your vps, input command :
 
 # Instal On CLI
-## 1. Create Folder
-```
-mkdir TENEO_CLI
-cd TENEO_CLI
-```
-## 2. Screen
+## 1. Screen
 ```
 screen -S teneo
 ```
-## 3. Clone Repository
+## 2. Clone Repository
 ```
 git clone https://github.com/winsnip/TENEO_CLI.git
+```
+## 3. Open Folder
+```
+cd TENEO_CLI
 ```
 ## 4. Craate .env
 Before running, make sure you have installed nodejs
