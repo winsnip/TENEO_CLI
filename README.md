@@ -31,7 +31,7 @@ git clone https://github.com/winsnip/TENEO_CLI.git
 cd TENEO_CLI
 ```
 ## 4. Craate .env
-Before running, make sure you have installed nodejs
+Before running, make sure you have installed nodejs adn dotenv
 ```
 sudo apt update && sudo apt upgrade -y
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
