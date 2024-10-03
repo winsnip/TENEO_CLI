@@ -16,5 +16,10 @@ Before running the extension, make sure you register first if you haven't regist
 After all steps have been successfully completed, You can stop connecting to the node to run on a VPS of at least Ubuntu 22.04.
 3. prepare coffee and let's be creative in this game
 4. open your vps, input command :
-```
 
+# Instal On CLI
+#create folder
+```
+mkdir teneo
+cd teneo
+```
