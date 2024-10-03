@@ -20,7 +20,7 @@ Before running the extension, make sure you register first if you haven't regist
 # Instal On CLI
 ## 1. Create Folder
 ```
-mkdir teneo
+mkdir TENEO_CLI
 cd TENEO_CLI
 ```
 ## 2. Screen
