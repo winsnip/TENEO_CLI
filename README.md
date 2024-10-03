@@ -52,7 +52,7 @@ SUPABASE_USER_PASSWORD=
 You can find the subbase key by first logging in to the extension, when you are logged in, right click and select inspect.
 move to the network tab and click user, copy your apikey.
 ## fill in file .env
-📌 paste your bearer token into supabase_key and fill in the email and password used to log in to the extension. and CTRL+X choose y ENTER.
+📌 paste your apikey into supabase_key and fill in the email and password used to log in to the extension. and CTRL+X choose y ENTER.
 📌 Command
 - CTRL+SHIFT+V : used for pasting
 ## 5. Running
