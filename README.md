@@ -18,12 +18,20 @@ Before running the extension, make sure you register first if you haven't regist
 4. open your vps, input command :
 
 # Instal On CLI
-## create folder
+## 1. Create Folder
 ```
 mkdir teneo
 cd teneo
 ```
-## crate .env
+## 2. Screen
+```
+screen -S teneo
+```
+## 3. Clone Repository
+```
+git clone https://github.com/winsnip/TENEO_CLI.git
+```
+## 4. Craate .env
 Before running, make sure you have installed nodejs
 ```
 sudo apt update && sudo apt upgrade -y
@@ -31,7 +39,6 @@ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt install -y nodejs
 node -v
 ```
-
 ```
 nano .env
 ```
@@ -49,8 +56,10 @@ move to the network tab and click user, copy your token bearer.
 📌 command
 - CTRL+SHIFT+V : used for pasting
 - CTRL+A+D     : save screen
-## Running
+## 5. Running
 ```
 node teneo.js
 ```
+
+
 
