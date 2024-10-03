@@ -21,7 +21,7 @@ Before running the extension, make sure you register first if you haven't regist
 ## 1. Create Folder
 ```
 mkdir teneo
-cd teneo
+cd TENEO_CLI
 ```
 ## 2. Screen
 ```
