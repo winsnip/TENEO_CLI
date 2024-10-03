@@ -53,13 +53,21 @@ You can find the subbase key by first logging in to the extension, when you are 
 move to the network tab and click user, copy your token bearer.
 ## fill in file .env
 📌 paste your bearer token into supabase_key and fill in the email and password used to log in to the extension. and CTRL+X choose y ENTER.
-📌 command
+📌 Command
 - CTRL+SHIFT+V : used for pasting
-- CTRL+A+D     : save screen
 ## 5. Running
 ```
 node teneo.js
 ```
-
+📌 Command
+- CTRL+A+D     : save screen
+to open the teneo screen
+📌 Command
+```
+screen -r teneo
+```
+donation link
+- kalo mau bayarin kopi https://trakteer.id/Winsnipsupport/tip
+- 
 
 
