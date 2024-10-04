@@ -61,7 +61,7 @@ move to the network tab and click user, copy your apikey.
 - CTRL+SHIFT+V : used for pasting
 ## 5. Running
 ```
-node teneo.js
+node run.js
 ```
 📌 Command
 - CTRL+A+D     : save screen
