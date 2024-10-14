@@ -70,6 +70,16 @@ to open the teneo screen
 ```
 screen -r teneo
 ```
+## 6. Running using PM2 (Additonal)
+```
+npm install pm2@latest -g
+```
+📌 Command
+to run script using pm2
+📌 Command
+```
+pm2 start run.js
+```
 donation link
 - kalo mau bayarin kopi https://trakteer.id/Winsnipsupport/tip
 - 
