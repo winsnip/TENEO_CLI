@@ -1,7 +1,1 @@
-background.js
-manifest.js
-node_modules/
-package-lock.json
-package.json
-run.js
-token.txt
+userid.txt
