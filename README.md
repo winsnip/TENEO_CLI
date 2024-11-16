@@ -34,34 +34,25 @@ git clone https://github.com/winsnip/TENEO_CLI.git
 ```
 cd TENEO_CLI
 ```
-## 4. Create .env
+```
+pip install -r requirements.txt
+```
+## 4. Create a file with userid.txt
 Before running, make sure you have installed nodejs adn dotenv
 ```
-sudo apt update && sudo apt upgrade -y
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-sudo apt install -y nodejs
-node -v
-npm install dotenv
+nano userid.txt
 ```
-```
-nano .env
-```
-copy the command below and paste it
-```
-SUPABASE_URL=https://ikknngrgxuxgjhplbpey.supabase.co
-SUPABASE_KEY=
-SUPABASE_USER_EMAIL=
-SUPABASE_USER_PASSWORD=
-```
-You can find the subbase key by first logging in to the extension, when you are logged in, right click and select inspect.
-move to the network tab and click user, copy your apikey.
-## fill in file .env
+## 5. Find user id
+u can get user id with inspect on exstension, open teneo exstension and right click on the mouse or F12, if u using smartphone u can choose developer tools, move to the network tab.
+to display the user id u must click connect first on the extension until it really connected and now u have found it.
+
+## Copy user id and paste on userid.txt file
 📌 paste your apikey into supabase_key and fill in the email and password used to log in to the extension. and CTRL+X choose y ENTER.
 📌 Command
 - CTRL+SHIFT+V : used for pasting
 ## 5. Running
 ```
-node run.js
+python3 main.py
 ```
 📌 Command
 - CTRL+A+D     : save screen
@@ -72,6 +63,6 @@ screen -r teneo
 ```
 donation link
 - kalo mau bayarin kopi https://trakteer.id/Winsnipsupport/tip
-- 
+- u can buy me a coffee https://trakteer.id/Winsnipsupport/tip
 
 
