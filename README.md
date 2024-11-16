@@ -50,7 +50,7 @@ to display the user id u must click connect first on the extension until it real
 📌 paste your apikey into supabase_key and fill in the email and password used to log in to the extension. and CTRL+X choose y ENTER.
 📌 Command
 - CTRL+SHIFT+V : used for pasting
-## 5. Running
+## 6. Running
 ```
 python3 main.py
 ```
