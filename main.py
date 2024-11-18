@@ -3,13 +3,13 @@ import aiohttp
 import asyncio
 from colorama import Fore, Style
 
-# Define colors for log messages
+
 green = Fore.LIGHTGREEN_EX
 magenta = Fore.LIGHTMAGENTA_EX
 yellow = Fore.LIGHTYELLOW_EX
 reset = Style.RESET_ALL
 
-# Add emoticons to the log
+
 ping_emoji = "⚡"
 laugh_emoji = "😂"
 timer_emoji = "⏳"
@@ -18,7 +18,7 @@ refresh_emoji = "🔄"
 class TeneoXD:
     def __init__(self):
         self.wss_url = "wss://secure.ws.teneo.pro/websocket"
-        self.ping_count = 0  # Counter to track the number of PINGs
+        self.ping_count = 0 
 
     def log(self, msg, color=green):
         """Log without timestamp, only the message."""
@@ -42,10 +42,10 @@ class TeneoXD:
                             for i in range(90):
                                 await wss.send_json({"type": "PING"})
                                 self.ping_count += 1
-                                self.log_heartbeat(i)  # Custom heartbeat log with emoticons
+                                self.log_heartbeat(i)  
                                 await countdown(10)
 
-                                # Every 15 PINGs, display points information and refresh message
+                                
                                 if self.ping_count % 15 == 0:
                                     self.log_points_and_refresh(point_today, point_total)
 
@@ -59,7 +59,7 @@ class TeneoXD:
 
     def log_heartbeat(self, countdown_time):
         """Log heartbeat with emoticons and countdown timer."""
-        remaining_time = 10 - (countdown_time % 10)  # Reset countdown to 10 after reaching 0
+        remaining_time = 10 - (countdown_time % 10)  
         self.log(f"{ping_emoji} Next heartbeat in: {timer_emoji} {remaining_time} seconds {laugh_emoji} !!", magenta)
 
     def log_points_and_refresh(self, point_today, point_total):
@@ -82,7 +82,7 @@ async def countdown(t):
         await asyncio.sleep(1)
 
 async def login_and_get_userid():
-    # Menampilkan logo terlebih dahulu dengan warna
+   
     print(Fore.BLUE + '██     ██ ██ ███    ██ ███████ ███    ██ ██ ██████  ')
     print('██     ██ ██ ████   ██ ██      ████   ██ ██ ██   ██ ')
     print('██  █  ██ ██ ██ ██  ██ ███████ ██ ██  ██ ██ ██████  ')
@@ -91,7 +91,7 @@ async def login_and_get_userid():
     print(Fore.RESET)
     print("Join our Telegram channel: https://t.me/winsnip")
 
-    # Menunggu input setelah logo ditampilkan
+ 
     email = input("Input email: ")
     password = input("Input password: ")
     
@@ -129,7 +129,7 @@ async def login_and_get_userid():
         res = await result.json()
         userid = res.get("user", {}).get("id")
 
-        # Membuat dan menyimpan userid di file userid.txt
+        
         with open("userid.txt", "w") as file:
             file.write(userid)
         
@@ -142,7 +142,7 @@ async def main():
         # Menampilkan pesan setelah logo
         print(f"{green}you haven't userid.txt file, it's ok!{reset}")
     
-    print(f"Running setup.py to login...")  # Menampilkan pesan sebelum input
+    print(f"Running setup.py to login...") 
 
     await login_and_get_userid()
 
@@ -154,7 +154,7 @@ if __name__ == "__main__":
         asyncio.run(main())
     except KeyboardInterrupt:
         print("\n[+] Program interrupted, closing session...")
-        # Only close the event loop if it exists
+       
         try:
             loop = asyncio.get_event_loop()
             loop.close()
