@@ -48,7 +48,7 @@ u can get user id with inspect on exstension, open teneo exstension and right cl
 to display the user id u must click connect first on the extension until it really connected and now u have found it.
 
 ## Copy user id and paste on userid.txt file
-📌 paste your apikey into supabase_key and fill in the email and password used to log in to the extension. and CTRL+X choose y ENTER.
+CTRL+X choose y ENTER to save
 📌 Command
 - CTRL+SHIFT+V : used for pasting
 ## 6. Running
