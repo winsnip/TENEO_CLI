@@ -22,6 +22,7 @@ Before running the extension, make sure you register first if you haven't regist
 ```
 bash <(curl -s https://file.winsnip.xyz/file/uploads/Teneo.sh)
 ```
+# Manual Install
 ## 1. Screen
 ```
 screen -S teneo
