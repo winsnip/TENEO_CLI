@@ -18,10 +18,6 @@ Before running the extension, make sure you register first if you haven't regist
 4. open your vps, input command :
 
 # Instal On CLI
-## Auto Install
-```
-bash <(curl -s https://file.winsnip.xyz/file/uploads/Teneo.sh)
-```
 # Manual Install
 ## 1. Screen
 ```
